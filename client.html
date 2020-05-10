@@ -136,10 +136,10 @@ kOkkkkkkkkkxxxxkKNX0KXKOddo;....'xNNNNNNNNNNNNNNNNNKc..       ..........        
   var wt;
 
   ip = prompt("what is the server address or ip?");
-    var audio = new Audio("http://"+ip+":19019/audio");
+    var audio = new Audio("http://"+ip+":8000/audio");
 
   const Http = new XMLHttpRequest();
-Http.open("GET", "http://"+ip+":19019/time");
+Http.open("GET", "http://"+ip+":8000/time");
 Http.send();
 
 Http.onreadystatechange = (e) => {

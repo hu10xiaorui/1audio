@@ -13,7 +13,7 @@ const express = require('express')			// module used to create the web server
 const prompt = require('prompt-sync')();
 /* GLOBAL CONSTANTS */
 const app = express()						// Creating a variable: app, to receive and respond to client's requests
-	, port = 19019							// Defining what port to use to talk to the client
+	, port = 8000							// Defining what port to use to talk to the client
 	, server = http.createServer(app)		// Creating the web server and storing it in a variable: app
 	, corsOptions = {						// Setting up the server to accept requests from other domain names
 		'origin': '*',
